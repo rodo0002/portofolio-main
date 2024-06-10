@@ -1,0 +1,38 @@
+@keyframes colorAndMove {
+    0% {
+        color: #D3B4AB;
+        transform: translateX(0);
+    }
+    50% {
+        color: #EEEEEE;
+        transform: translateX(20px);
+    }
+    100% {
+        color: #D3B4AB;
+        transform: translateX(0);
+    }
+}
+
+.h1projekter {
+    animation: colorAndMove 10s infinite;
+}
+
+@keyframes colorAndMove {
+    0% {
+        color: #D3B4AB;
+        transform: translateX(0);
+    }
+    50% {
+        color: #EEEEEE;
+        transform: translateX(0px);
+    }
+    100% {
+        color: #D3B4AB;
+        transform: translateX(0);
+    }
+}
+
+.fadeText {
+    opacity: 0;
+    transition: opacity 10s ease-in-out;
+}
