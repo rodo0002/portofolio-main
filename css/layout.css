@@ -18,6 +18,7 @@ nav a {
   float: left;
   padding: 30px;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
@@ -28,25 +29,34 @@ header {
 .dolleris,
 .portofolio {
   color: #eeeeee;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .CV {
   text-align: center;
-  color:white;
+  color: #d3b4ab;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .portofolio,
 .Kompetencer {
   animation: colorAndMove 20s infinite;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
   font-size: 1.2rem;
   line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .h1container {
   max-width: 100%;
+}
+
+.h1projekter {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .tekstom {
@@ -60,6 +70,7 @@ p {
 .temaer5 {
   color: #847a73;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* body {
@@ -119,7 +130,7 @@ nav ul li a:hover {
 }
 
 .portræt {
-  max-width: 400px;
+  max-width: 410px;
   height: auto;
   border: white 2px solid;
 }
@@ -148,12 +159,12 @@ nav ul li a:hover {
 
 a.projekter {
   text-decoration: none;
-  color: #847a73;
+  color: #d3b4ab;
   font-weight: bold;
   display: inline-block;
   text-align: center;
-  font-size: 1.2rem;
-  padding: 15px;
+  font-size: 1rem;
+  padding: 3px;
   max-width: 200px;
   max-height: 200px;
   display: block;
@@ -161,11 +172,13 @@ a.projekter {
   background-color: black;
   border-radius: 15px;
   border: 2px solid #847a73;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .kompetencer-list {
   list-style-type: disc;
   font-size: medium;
   line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .kompetencer {
   text-align: center;
@@ -182,6 +195,7 @@ a.projekter:hover {
 }
 .closeup {
   max-width: 100%;
+  border: white 2px solid;
 }
 
 .projekterrække {
@@ -193,7 +207,10 @@ a.projekter:hover {
 
 .forsidep {
   font-size: 1rem;
-  padding: 20px;
+  padding: 5px;
+  background-color: #847a73;
+  border-radius: 5px;
+  padding: 1em;
 }
 .dolleris {
   text-align: center;
@@ -202,6 +219,11 @@ a.projekter:hover {
 .portofolio {
   text-align: right;
   color: #d3b4ab;
+}
+
+.projekt-billede img {
+  width: 80%;
+  margin-left: 2em;
 }
 
 @media (min-width: 900px) {
@@ -214,14 +236,18 @@ a.projekter:hover {
     max-width: 1200px;
     margin: 0 auto;
   }
-  .kompetencer,
+  
   .CV {
-    text-align: left;
+    text-align: center;
   }
 
   .text-container {
     grid-column: 1/5;
     display: grid;
+  }
+
+  .projekterrække {
+    margin-right: 20em;
   }
 
   /*flex element*/
@@ -259,6 +285,7 @@ a.projekter:hover {
   .closeup {
     max-width: 400px;
     height: auto;
+    margin-top: 2em;
   }
 
   .h1container {
@@ -268,9 +295,9 @@ a.projekter:hover {
 
   .projekt-billede img {
     grid-template-columns: 5fr 5fr;
-    max-width: 100%;
     height: auto;
     filter: grayscale(100%);
+    margin-left: 3em;
   }
 
   .projekt-billede img:hover {
@@ -279,6 +306,8 @@ a.projekter:hover {
 
   .forsidep {
     font-size: 1rem;
+    margin-top: 5em;
+    padding: 2.3em;
   }
 
   /* .forsidepp {
@@ -288,6 +317,7 @@ a.projekter:hover {
 
   .rosa {
     grid-column: 1;
+    font-size: 2.3rem;
   }
   .overskrift {
     display: grid;
@@ -297,10 +327,15 @@ a.projekter:hover {
   .dolleris {
     grid-column: 2;
     grid-row: 2;
+    font-size: 2.3rem;
   }
 
   .portofolio {
     grid-column: 3;
     grid-row: 3;
+    font-size: 2.3rem;
+    
   }
+
+ 
 }
