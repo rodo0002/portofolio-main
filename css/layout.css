@@ -10,6 +10,17 @@ ul {
   list-style: none;
 }
 
+.h1web, .h1ux, .h1animation, .h1indhold {
+  color: #d3b4ab;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.læring {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #d3b4ab;
+}
+
 nav a {
   color: #847a73;
   display: flex;
@@ -231,10 +242,9 @@ a.projekter:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-
     margin: 0 auto;
     max-width: 1200px;
-    margin: 0 auto;
+    
   }
   
   .CV {
@@ -267,7 +277,7 @@ a.projekter:hover {
   .billede6,
   .billede7,
   .billede8 {
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
   .projekterrække {
