@@ -269,7 +269,7 @@ a.projekter:hover {
 
   .grid_1-1_1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin: 0 auto;
     max-width: 1200px;
