@@ -201,12 +201,13 @@ a.projekter:hover {
 
 .container-om {
   margin: 0 auto;
+  max-width: 100%;
   
 }
 .closeup {
   max-width: 100%;
   border: white 2px solid;
-  margin-left: 10em;
+  
 }
 
 .projekterrække {
@@ -292,6 +293,8 @@ a.projekter:hover {
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
   }
+
+ 
 
   .grid_1-1_2 {
     display: grid;
@@ -415,6 +418,8 @@ a.projekter:hover {
     font-size: 2.3rem;
     
   }
+
+
 
  
 }
