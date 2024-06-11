@@ -247,7 +247,7 @@ a.projekter:hover {
   text-align: center;
 }
 
-.billede1,
+  .billede1,
   .billede2,
   .billede3,
   .billede4,
@@ -292,7 +292,6 @@ a.projekter:hover {
     grid-template-columns: 1fr 1fr;
     padding: 2em;
   }
-
 
 
   .læring {
