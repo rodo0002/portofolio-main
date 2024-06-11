@@ -13,9 +13,6 @@
     }
 }
 
-.h1projekter {
-    animation: colorAndMove 10s infinite;
-}
 
 @keyframes colorAndMove {
     0% {

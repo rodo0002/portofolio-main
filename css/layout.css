@@ -10,16 +10,12 @@ ul {
   list-style: none;
 }
 
-.h1web, .h1ux, .h1animation, .h1indhold {
+.h1web, .h1ux, .h1animation, .h1indhold, .CV, .h1projekter, .Kompetencer {
   color: #d3b4ab;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
 
-.læring {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #d3b4ab;
-}
 
 nav a {
   color: #847a73;
@@ -32,9 +28,6 @@ nav a {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header {
-  padding-bottom: 20px;
-}
 
 .rosa,
 .dolleris,
@@ -43,14 +36,8 @@ header {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.CV {
-  text-align: center;
-  color: #d3b4ab;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
-.portofolio,
-.Kompetencer {
+.portofolio {
   animation: colorAndMove 20s infinite;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -65,10 +52,6 @@ p {
   max-width: 100%;
 }
 
-.h1projekter {
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 .tekstom {
   font-size: medium;
@@ -84,12 +67,6 @@ p {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* body {
-  margin-bottom: 0 auto;
-  padding: 0 auto;
-  overflow-x: hidden;
-  box-sizing: border-box;
-} */
 
 header {
   padding: 10px;
@@ -105,6 +82,7 @@ nav ul {
 
 nav ul li {
   margin: 0 15px;
+  color: #eeeeee;
 }
 
 nav ul li a {
@@ -117,17 +95,47 @@ nav ul li a:hover {
   color: #eeeeee;
 }
 
-.container {
-  display: grid;
-}
 
 .image-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   grid-row: 1 / span 5;
   padding-top: 20px;
 }
+
+
+  .billede1,
+  .billede2,
+  .billede3,
+  .billede4,
+  .billede5,
+  .billede6,
+  .billede8 {
+    filter: grayscale(100%);
+  }
+
+  .billede1:hover {
+    filter: brightness(1);
+  }
+  .billede2:hover {
+    filter: brightness(1);
+  }
+  .billede3:hover {
+    filter: brightness(1);
+  }
+  .billede4:hover {
+    filter: brightness(1);
+  }
+  .billede5:hover {
+    filter: brightness(1);
+  }
+  .billede6:hover {
+    filter: brightness(1);
+  }
+  .billede8:hover {
+    filter: brightness(1);
+  }
+  
 
 .projekt-billede img {
   max-width: 100%;
@@ -142,17 +150,9 @@ nav ul li a:hover {
 .portræt {
   max-width: 400px;
   height: auto;
-  border: white 2px solid;
+  
 }
 
-/* .arm {
-  max-width: 200px;
-  transform: translate(-50%, 65%);
-  top: 70%;
-  left: 30%;
-  display: block;
-  border: white 2px solid;
-} */
 
 .rosa {
   text-align: left;
@@ -162,10 +162,6 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.portofolio {
-  text-align: right;
-  color: #d3b4ab;
-}
 
 a.projekter {
   text-decoration: none;
@@ -184,38 +180,20 @@ a.projekter {
   border: 2px solid #847a73;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.kompetencer-list {
-  list-style-type: disc;
-  font-size: medium;
-  line-height: 1.5;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.kompetencer {
-  text-align: center;
-}
+
+
 
 a.projekter:hover {
   color: #d3b4ab;
   border: 2px solid #d3b4ab;
 }
 
-.container-om {
+.container-om, .closeup {
   margin: 0 auto;
   max-width: 100%;
-  
-}
-.closeup {
-  max-width: 100%;
-  border: white 2px solid;
-  
+  border: white;
 }
 
-.projekterrække {
-  text-align: center;
-  font-size: smaller;
-  color: #d3b4ab;
-  font-weight: bold;
-}
 
 .forsidep {
   font-size: 1rem;
@@ -224,9 +202,7 @@ a.projekter:hover {
   border-radius: 5px;
   padding: 1em;
 }
-.dolleris {
-  text-align: center;
-}
+
 
 .portofolio {
   text-align: right;
@@ -234,18 +210,12 @@ a.projekter:hover {
 }
 
 .projekt-billede img {
-  width: 80%;
+  width: 82%;
   margin-left: 2em;
 }
 
 .fadeText {
   font-size: medium;
-}
-
-.grid_1-1_2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
 }
 
   .billede1,
@@ -259,10 +229,13 @@ a.projekter:hover {
     width: 100%;
   }
 
- 
 
+ 
 @media (min-width: 900px) {
+
   .grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -273,10 +246,9 @@ a.projekter:hover {
 
   .grid_3-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 20px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 50px;
     margin-top: -20px;
   }
 
@@ -294,7 +266,6 @@ a.projekter:hover {
     column-gap: 1em;
   }
 
- 
 
   .grid_1-1_2 {
     display: grid;
@@ -308,11 +279,23 @@ a.projekter:hover {
     padding: 2em;
   }
 
-
-
-  .læring {
-    margin-left: 8em;
-    text-align: center;
+  .overskrift {
+    grid-column: 1 / -1;
+    display: flex;
+    flex: auto; 
+    gap: 10px;
+    display: grid;
+    margin: 0;
+    
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    grid-column: 6/10;
+    display: grid;
   }
 
   .fadeText {
@@ -334,12 +317,6 @@ a.projekter:hover {
     margin-right: 20em;
   }
 
-  /*flex element*/
-  .image-container {
-    grid-column: 6/10;
-    display: grid;
-  }
-
   .billede1,
   .billede2,
   .billede3,
@@ -349,15 +326,9 @@ a.projekter:hover {
   .billede7,
   .billede8 {
     margin-left: 15%;
-    width: 80%;
+    width: 82%;
   }
 
-  .projekterrække {
-    font-size: larger;
-    color: #d3b4ab;
-    margin-left: 30%;
-    font-weight: bold;
-  }
 
   p {
     text-align: left;
@@ -368,11 +339,7 @@ a.projekter:hover {
     max-width: 400px;
     height: auto;
     margin-top: 5em;
-  }
-
-  .h1container {
-    display: grid;
-    gap: 30px;
+    
   }
 
   .projekt-billede img {
@@ -392,45 +359,6 @@ a.projekter:hover {
     padding: 2.3em;
   }
 
-  /* .forsidepp {
-    font-size: x-large;
-    font-weight: bold;
-  } */
-
-  .rosa {
-    grid-column: 1;
-    font-size: 2.3rem;
-  }
-  .overskrift {
-    display: grid;
-    margin: 0;
-  }
-
-  .dolleris {
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 2.3rem;
-  }
-
-  .portofolio {
-    grid-column: 3;
-    grid-row: 3;
-    font-size: 2.3rem;
-    
-  }
-
-
-
  
 }
 
-@media (min-width: 1500px) {
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding-left: 70px;
-    padding-right: 70px;
-    margin-top: -20px;
-  }
-}
